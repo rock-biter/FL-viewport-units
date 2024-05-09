@@ -1,0 +1,136 @@
+:root {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Inter', sans-serif;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.7em;
+}
+
+section p {
+	max-width: 780px;
+}
+
+section p + p {
+	margin-top: 2rem;
+}
+
+.container {
+	max-width: 1024px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container-fluid {
+	width: 100%;
+}
+
+.hero {
+	background-color: #2f45cc;
+	color: white;
+}
+
+.hero.section-screen {
+	align-items: flex-end;
+}
+
+.section-screen {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+}
+
+.section-screen .section-title {
+	line-height: 0.9em;
+	color: #2f45cc;
+}
+
+.hero .section-title {
+	font-size: 24vw;
+	color: white;
+}
+
+.fullstack {
+	background-image: url('../img/Banner-webdev.png');
+}
+
+.fullstack .section-title {
+	font-size: 22vw;
+}
+
+.backend {
+	background-image: url('../img/Banner-backend.png');
+}
+
+.backend .section-title {
+	font-size: 23vw;
+}
+
+.data-analytics {
+	background-image: url('../img/Banner-data.png');
+}
+
+.data-analytics .section-title {
+	font-size: 20vw;
+}
+
+.ux-ui {
+	background-image: url('../img/Banner-uxui.png');
+}
+
+.ux-ui .section-title {
+	font-size: 22vw;
+}
+
+/* navbar */
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 30px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(10px);
+}
+
+.menu {
+	display: flex;
+	gap: 40px;
+	justify-content: center;
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/* utilities */
+
+.py-5 {
+	padding: 6rem 0;
+}
